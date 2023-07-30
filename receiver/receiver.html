@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center><h1>SMART VIDEO CALL</h1>
+        <div>
+            <input class="inp" placeholder="Enter username..."
+                    type="text"
+                    id="username-input" /><br><br>
+            <button class="bn30" onclick="joinCall()">Join Call</button>
+        </div>
+        </center>
+        <div id="video-call-div">
+            <video muted id="local-video" autoplay></video>
+            <video id="remote-video" autoplay></video>
+            <div class="call-action-div">
+                <button class="bn30" onclick="muteVideo()">Mute Video</button>
+                <button class="bn30" onclick="muteAudio()">Mute Audio</button>
+            </div>
+        </div>
+        <script src="./receiver.js"></script>
+    </body>
+
+</html>
